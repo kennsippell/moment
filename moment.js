@@ -2139,7 +2139,7 @@
                     'use moment.updateLocale(localeName, config) to change ' +
                         'an existing locale. moment.defineLocale(localeName, ' +
                         'config) should only be used for creating a new locale ' +
-                        'See http://momentjs.com/guides/#/warnings/define-locale/ for more info.'
+                        'See http:/ /momentjs.com/guides/#/warnings/define-locale/ for more info.'
                 );
                 parentConfig = locales[name]._config;
             } else if (config.parentLocale != null) {
@@ -2541,7 +2541,7 @@
         'value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), ' +
             'which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are ' +
             'discouraged and will be removed in an upcoming major release. Please refer to ' +
-            'http://momentjs.com/guides/#/warnings/js-date/ for more info.',
+            'http:/ /momentjs.com/guides/#/warnings/js-date/ for more info.',
         function (config) {
             config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
         }
@@ -3027,7 +3027,7 @@
     }
 
     var prototypeMin = deprecate(
-            'moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/',
+            'moment().min is deprecated, use moment.max instead. http:/ /momentjs.com/guides/#/warnings/min-max/',
             function () {
                 var other = createLocal.apply(null, arguments);
                 if (this.isValid() && other.isValid()) {
@@ -3038,7 +3038,7 @@
             }
         ),
         prototypeMax = deprecate(
-            'moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/',
+            'moment().max is deprecated, use moment.min instead. http:/ /momentjs.com/guides/#/warnings/min-max/',
             function () {
                 var other = createLocal.apply(null, arguments);
                 if (this.isValid() && other.isValid()) {
@@ -3572,7 +3572,7 @@
                         '(period, number) is deprecated. Please use moment().' +
                         name +
                         '(number, period). ' +
-                        'See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.'
+                        'See http:/ /momentjs.com/guides/#/warnings/add-inverted-param/ for more info.'
                 );
                 tmp = val;
                 val = period;
@@ -4969,11 +4969,11 @@
         getSetYear
     );
     proto.zone = deprecate(
-        'moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/',
+        'moment().zone is deprecated, use moment().utcOffset instead. http:/ /momentjs.com/guides/#/warnings/zone/',
         getSetZone
     );
     proto.isDSTShifted = deprecate(
-        'isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information',
+        'isDSTShifted is deprecated. See http:/ /momentjs.com/guides/#/warnings/dst-shifted/ for more information',
         isDaylightSavingTimeShifted
     );
 

@@ -18,7 +18,7 @@ function createAdder(direction, name) {
                     '(period, number) is deprecated. Please use moment().' +
                     name +
                     '(number, period). ' +
-                    'See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info.'
+                    'See http:/ /momentjs.com/guides/#/warnings/add-inverted-param/ for more info.'
             );
             tmp = val;
             val = period;
